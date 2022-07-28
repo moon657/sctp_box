@@ -127,7 +127,8 @@ void* handle_connection(void* thread_data)
             return NULL;
         }
 
-        printf("Message received: %s\n", buf);
+        std::cout<<"Message received: "
+                 <<buf<<std::endl;
 
         strncpy(buf, "OK", sizeof(buf)-1);
 
